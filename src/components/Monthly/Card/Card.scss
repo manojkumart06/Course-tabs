@@ -1,0 +1,86 @@
+// Card.scss
+.card {
+  background-color: #6E69C8;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+
+  .card-content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .dot-icon {
+    margin: 0;
+  }
+
+  .card-content {
+    flex-grow: 1;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .price-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .price-valid {
+        font-size: 1em;
+        font-weight: bold;
+      }
+
+      .price {
+        font-size: 1em;
+        font-weight: bold;
+        color: #F0CD5F;
+        margin-left: 200px;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        font-size: 0.8em;
+        color: #F0CD5F;
+        font-weight: bold;
+        margin-left: 8px;
+      }
+    }
+
+    .per-session-price {
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+  }
+
+  .card-pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .refund {
+      font-size: 0.8em;
+      margin-left: 50px;
+    }
+
+    .discount {
+      background-color: #5F50BE;
+      border-radius: 2px;
+      padding: 2px 4px;
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-right: 150px;
+    }
+
+    .total-sessions {
+      margin-right: 95px;
+      font-size: 0.8em;
+    }
+  }
+}

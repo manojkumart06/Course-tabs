@@ -1,0 +1,109 @@
+.tabs-board-container {
+    background-color: #5F50BE;
+    padding: 10px;
+    color: #ffffff;
+    width: 80%;
+    margin: 10px auto;
+  
+    .tab-board-list {
+        display: flex;
+        width: 35%;
+        justify-content: flex-start;
+        background-color: #5F50BE;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+  
+        .tab-board {
+            flex: 1;
+            text-align: center;
+            width: 10%;
+            padding: 6px 0;
+            cursor: pointer;
+            font-size: 0.7em;
+            font-weight: bold;
+            color: #d2cccc;
+            background-color: #5F50BE;
+            transition: background-color 0.3s;
+  
+            &.active-tab {
+                color: #ffffff;
+                background-color: #142D87;
+            }
+  
+            &:hover {
+                background-color: #5641A1;
+            }
+  
+            &:first-child {
+                border-radius: 20px;
+            }
+  
+            &:last-child {
+                border-radius: 20px;
+            }
+        }
+    }
+  
+    .tab-board-content {
+        margin-left: -130px;
+  
+        .tab-board-pane {
+            margin: 1px;
+            display: none;
+  
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .board-content {
+        .board-stats {
+            font-size: 0.8em;
+            display: flex;
+            margin-bottom: 0;
+
+            div {
+                margin: 0px 20px;
+                text-align: left;
+
+                strong {
+                    font-weight: 600;
+                    display: block;
+                    text-align: left; /* Align text to the left */
+                }
+
+                .data-value {
+                    color: #FFA500; /* Orange color for the data values */
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-align: left; /* Align text to the left */
+                }
+            }
+        }
+
+        .course-topics {
+            h4 {
+                font-size: 0.9rem;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            .topics-columns {
+                font-size: 0.8rem;
+                display: flex;
+                justify-content: space-between;
+
+                .topics-column {
+                    width: 30%;
+
+                    div {
+                        margin: 5px 0;
+                        text-align: left; /* Align text to the left */
+                    }
+                }
+            }
+        }
+    }
+}

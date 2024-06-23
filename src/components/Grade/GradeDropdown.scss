@@ -1,0 +1,70 @@
+// GradeDropdown.scss
+.dropdown {
+    position: relative;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+  
+    .dropdown-trigger {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      margin-bottom: 7px;
+      gap: 2px;
+      color: #ffffff;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #ffffff;
+      }
+  
+      .dropdown-title {
+        margin: 0;
+      }
+  
+      .arrow-icon {
+        margin-left: 20px;
+        transition: transform 0.3s;
+      }
+  
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+    }
+    
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 100px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      padding: 8px 0;
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.3s;
+  
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        color: #333;
+        transition: color 0.3s;
+        text-decoration: none;
+  
+        &:hover {
+          color: #000;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+  

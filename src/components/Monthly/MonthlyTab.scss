@@ -1,0 +1,16 @@
+/* MonthlyTab.scss */
+.monthly-tab {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box; 
+  
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+  
