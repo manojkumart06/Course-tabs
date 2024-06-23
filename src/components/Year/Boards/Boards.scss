@@ -2,12 +2,13 @@
     background-color: #5F50BE;
     padding: 10px;
     color: #ffffff;
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
+    margin-left: 100px;
   
     .tab-board-list {
-        display: flex;
-        width: 35%;
+        width: 30%;
+        display:flex;
         justify-content: flex-start;
         background-color: #5F50BE;
         border-radius: 10px;
@@ -17,13 +18,12 @@
         .tab-board {
             flex: 1;
             text-align: center;
-            width: 10%;
             padding: 6px 0;
             cursor: pointer;
             font-size: 0.7em;
             font-weight: bold;
             color: #d2cccc;
-            background-color: #5F50BE;
+            border-radius: 20px;
             transition: background-color 0.3s;
   
             &.active-tab {
@@ -34,19 +34,12 @@
             &:hover {
                 background-color: #5641A1;
             }
-  
-            &:first-child {
-                border-radius: 20px;
-            }
-  
-            &:last-child {
-                border-radius: 20px;
-            }
+            flex:1;
         }
     }
   
     .tab-board-content {
-        margin-left: -130px;
+        margin-left: -150px;
   
         .tab-board-pane {
             margin: 1px;
@@ -59,6 +52,7 @@
     }
 
     .board-content {
+        
         .board-stats {
             font-size: 0.8em;
             display: flex;
@@ -71,27 +65,29 @@
                 strong {
                     font-weight: 600;
                     display: block;
-                    text-align: left; /* Align text to the left */
+                    text-align: left;
                 }
 
                 .data-value {
-                    color: #FFA500; /* Orange color for the data values */
-                    font-size: 1.5em;
+                    color: #F0CD5F;
+                    font-size: 2em;
                     font-weight: bold;
-                    text-align: left; /* Align text to the left */
+                    text-align: left; 
                 }
             }
         }
 
         .course-topics {
+            margin-left: 15px;
             h4 {
                 font-size: 0.9rem;
                 text-align: left;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
 
             .topics-columns {
                 font-size: 0.8rem;
+                font-weight: 400;
                 display: flex;
                 justify-content: space-between;
 
@@ -99,8 +95,8 @@
                     width: 30%;
 
                     div {
-                        margin: 5px 0;
-                        text-align: left; /* Align text to the left */
+                        margin: 2px 0;
+                        text-align: left; 
                     }
                 }
             }

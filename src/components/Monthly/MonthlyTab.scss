@@ -1,16 +1,83 @@
-/* MonthlyTab.scss */
 .monthly-tab {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box;
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px; 
+    margin-bottom: 15px;
+  }
+
+  footer {
+    width: 102%;
+    margin-left: -29px;
+    margin-bottom: -32px;
     padding: 20px; 
-    box-sizing: border-box; 
-  
-    .cards-container {
+    background-color: #142d87;
+    border-radius: 20px;
+    color: #ffffff;
+
+    .top-details {
+      margin-top: 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      padding: 10px 0;
+
+      .top-text {
+        display: flex;
+        align-items: left;
+        width: 100%;
+
+        .monthly-text1 {
+          text-align: left;
+          font-weight: bold;
+          flex: 1;
+
+          .separated-text1 {
+            margin-left: 0;
+          }
+        }
+
+        .monthly-text2 {
+          margin-right: 240px;
+          font-weight: bold;
+          flex: 1;
+        }
+
+        .book-button {
+          text-align: right;
+
+          button {
+            background-color: #f0cd5f;
+            border: none;
+            color: #142d87;
+            padding: 7px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.7em;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .bottom-details {
+      text-align: right;
       margin-top: 8px;
+      margin-bottom: 15px;
+
+      .terms_condition-text {
+        font-size: 0.8em;
+
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
     }
   }
-  
+}

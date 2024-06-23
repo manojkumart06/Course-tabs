@@ -1,14 +1,148 @@
-/* YearlyTab.scss */
 .yearly-tab {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0;
-    padding: 20px; 
-    box-sizing: border-box; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 
-    .tab-container{
-        margin-left: 20px;
-        margin-top: -50px;
+  .tab-container {
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+
+  footer {
+    width: 102%;
+    margin-left: -29px;
+    margin-bottom: -31px;
+    padding: 20px;
+    background-color: #142D87;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0;
+      gap: 0;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        &.top-row {
+          .filling-out-soon,
+          .discount-info {
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 3px;
+            background-color: #ffffff;
+            color: #142D87;
+            padding: 2px;
+          }
+
+          .discount-info {
+            margin-right: 567px;
+          }
+        }
+
+        &.middle-row {
+          .vacant-seats,
+          .subscription-cost,
+          .book-now-button {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+          }
+
+          strong{
+            color: #F0CD5F;
+          }
+
+          .subscription-cost {
+            display: flex;
+            align-items: center;
+            margin-right: 113px;
+
+            .original-price {
+              margin-left: 4px;
+              margin-top: 3px;
+              color: #F0CD5F;
+              font-size: 0.7rem;
+              text-decoration: line-through;
+            }
+
+            .discounted-price {
+              color: #F0CD5F;
+            }
+
+            .book-now-button {
+              background-color: #F0CD5F;
+              border: none;
+              color: #142D87;
+              padding: 7px 10px;
+              margin-left: 205px;
+              border-radius: 20px;
+              cursor: pointer;
+              font-size: 0.7rem;
+              font-weight: 400;
+            }
+          }
+        }
+
+        &.bottom-row {
+          .info-text,
+          .cost-inclusive {
+            font-size: 0.7rem;
+            display: block;
+            margin-top: -5px;
+          }
+          .cost-inclusive {
+            margin-right: 448px;
+          }
+        }
+
+        &.per-session-row {
+          .per-session-cost {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-right: 156px;
+            width: 100%;
+          }
+        }
+      }
+
+      
+    }
+
+    .tablet-guarantee-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 35px;
+      padding: 10px 0;
+      font-size: 0.9em;
+
+      .tablet-offer {
+        text-align: left;
+        margin: 0;
+      }
+
+      .guarantee {
+        text-align: right;
+        margin: 0;
+        font-size: 0.7rem;
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
     }
   }
-  
+}

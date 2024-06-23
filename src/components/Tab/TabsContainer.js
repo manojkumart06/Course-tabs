@@ -75,26 +75,6 @@ const TabsContainer = () => {
           })}
         </div>
       </header>
-      <footer>
-        <div className="top-details">
-          <div className="top-text">
-            <span className="monthly-text1">
-              Monthly classes let you choose <br /> <span className="seperated-text1">your own course topics</span>
-            </span>
-            <span className="monthly-text2">Each session lasts 45 minutes</span>
-            <span className="book-button">
-              <button>Book Now</button>
-            </span>
-          </div>
-        </div>
-        <div className="bottom-details">
-          <div className="bottom-text">
-            <span className="terms_condition-text">
-              Refund same day <a href="/terms-and-conditions">terms & conditions</a> apply*
-            </span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
