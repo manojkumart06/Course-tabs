@@ -40,7 +40,7 @@ $tertiary-color: #ffffff;
 
   footer {
     width: 104%;
-    margin-left: -32px;
+    margin-left: -30px;
     margin-bottom: -31px;
     padding: 20px;
     background-color: $secondary-color;
@@ -55,6 +55,7 @@ $tertiary-color: #ffffff;
     }
 
     @media (max-width: 800px) {
+      width: 102%;
       margin-left: -20px;
       margin-bottom: -20px;
       padding: 8px;
@@ -201,8 +202,6 @@ $tertiary-color: #ffffff;
 
             @media (max-width: 800px) {
               font-size: 0.6rem;
-              margin-right: 10px;
-              margin-top: 10px;
             }
 
             @media (max-width: 480px) {
@@ -221,16 +220,15 @@ $tertiary-color: #ffffff;
     
 
             @media (max-width: 1024px) {
-              margin-right: 80px;
+              margin-left: auto;
             }
 
             @media (max-width: 800px) {
               font-size: 0.6rem;
-              margin-right: 0;
             }
 
             @media (max-width: 480px) {
-              margin-left:155px ;
+              margin-left:188px ;
             }
           }
         }
