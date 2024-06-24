@@ -1,70 +1,118 @@
-// GradeDropdown.scss
+$primary-color: #ffffff;
+$secondary-color: #000000;
+$tertiary-color: #ddd;
+$quaternary-color: #fff;
+$quinary-color: #ccc;
+$hover-color: #f0f0f0;
+
 .dropdown {
-    position: relative;
-    margin-top: 20px;
+  position: relative;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  width: 118px;
+  border-bottom: 1px solid $tertiary-color;
+
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    width: 80px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    width: 70px;
+  }
+
+  @media (max-width: 576px) {
     font-size: 0.8rem;
-    width: 95px;
-    border-bottom: 1px solid #ddd;
-  
-    .dropdown-trigger {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      margin-left: 5px;
-      margin-bottom: 7px;
-      gap: 2px;
-      color: #ffffff;
-      transition: color 0.3s;
-  
-      &:hover {
-        color: #ffffff;
+    width: 60px;
+  }
+
+  .dropdown-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    gap: 2px;
+    color: $primary-color;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    .dropdown-title {
+      margin: 0;
+    }
+
+    .arrow-icon {
+      margin-left: 20px;
+      transition: transform 0.3s;
+
+      @media (max-width: 768px) {
+        margin-left: 10px;
       }
-  
-      .dropdown-title {
-        margin: 0;
-      }
-  
-      .arrow-icon {
-        margin-left: 20px;
-        transition: transform 0.3s;
-      }
-  
-      .rotate-180 {
-        transform: rotate(180deg);
+
+      @media (max-width: 576px) {
+        margin-left: 5px;
       }
     }
-    
-    .dropdown-content {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 100px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    background-color: $quaternary-color;
+    border: 1px solid $quinary-color;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 8px 0;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    @media (max-width: 768px) {
+      min-width: 80px;
+      padding: 6px 0;
+    }
+
+    @media (max-width: 576px) {
+      min-width: 60px;
+      padding: 4px 0;
+    }
+
+    a {
       display: flex;
-      flex-direction: column;
-      gap: 1px;
-      padding: 8px 0;
-      z-index: 10;
-      opacity: 1;
-      transition: opacity 0.3s;
-  
-      a {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px;
-        color: #333;
-        transition: color 0.3s;
-        text-decoration: none;
-  
-        &:hover {
-          color: #000;
-          background-color: #f0f0f0;
-        }
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+      color: $secondary-color;
+      transition: color 0.3s;
+      text-decoration: none;
+
+      @media (max-width: 768px) {
+        padding: 6px;
+        gap: 6px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 4px;
+        gap: 4px;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        background-color: $hover-color;
       }
     }
   }
-  
+}

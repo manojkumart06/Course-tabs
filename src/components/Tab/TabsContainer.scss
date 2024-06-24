@@ -1,8 +1,15 @@
+$primary-color: #F0CD5F;
+$secondary-color: #142D87;
+$tertiary-color: #ffffff;
+$quaternary-color: #5F50BE;
+$quinary-color: #d2cccc;
+$hover-color: #5641A1;
+
 .tabs-container {
-  background-color: #5F50BE;
+  background-color: $quaternary-color;
   border-radius: 15px;
   padding: 10px;
-  color: #ffffff;
+  color: $tertiary-color;
   width: 80%;
   margin: 10px auto;
 
@@ -10,7 +17,7 @@
     display: flex;
     width: 30%;
     justify-content: flex-start;
-    background-color: #5F50BE;
+    background-color: $quaternary-color;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -22,23 +29,20 @@
       cursor: pointer;
       font-size: 0.9em;
       font-weight: bold;
-      color: #d2cccc;
-      background-color: #5F50BE;
+      color: $quinary-color;
+      background-color: $quaternary-color;
       transition: background-color 0.3s;
 
       &.active-tab {
-        color: #ffffff;
-        background-color: #142D87;
+        color: $tertiary-color;
+        background-color: $secondary-color;
       }
 
       &:hover {
-        background-color: #5641A1;
+        background-color: $hover-color;
       }
 
-      &:first-child {
-        border-radius: 20px;
-      }
-
+      &:first-child,
       &:last-child {
         border-radius: 20px;
       }
@@ -57,5 +61,37 @@
       }
     }
   }
+}
 
+/* Media Queries */
+@media (max-width: 1024px) {
+  .tabs-container .tab-list {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs-container {
+    width: 60%;
+  }
+
+  .tabs-container .tab-list {
+    width: 70%;
+  }
+}
+
+@media (max-width: 420px) {
+  .tabs-container {
+    padding: 5px;
+    font-size: 0.7em;
+  }
+
+  .tabs-container .tab-list {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .tabs-container .tab-list .tab {
+    padding: 5px 0;
+  }
 }

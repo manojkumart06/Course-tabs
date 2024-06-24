@@ -11,7 +11,7 @@ const YearlyTab = ({ data }) => {
   };
 
   const selectedData = data.find(item => item.grade === selectedGrade);
-  console.log('selectedData is',selectedData)
+  //console.log('selectedData is',selectedData)
 
   return (
     <div className="yearly-tab">

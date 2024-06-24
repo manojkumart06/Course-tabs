@@ -37,25 +37,25 @@ const Card = ({ data, sessionType }) => {
 
   return (
     <div className="card">
-    <header>
-      <div className="card-content-wrapper">
-        <GoDotFill className="dot-icon" />
-        <div className="card-content">
-          <div className="card-header">
-            <div className="price-section">
-              <span className='price-valid'>{valid}</span>
-              <span className="price">₹{price}</span>
-              <span className="original-price">₹{originalPrice}</span>
+      <header>
+        <div className="card-content-wrapper">
+          <GoDotFill className="dot-icon" />
+          <div className="card-content">
+            <div className="card-header">
+              <div className="price-section">
+                <span className='price-valid'>{valid}</span>
+                <span className="price">₹{price}</span>
+                <span className="original-price">₹{originalPrice}</span>
+              </div>
+              <span className="per-session-price">₹{per_class_price} per session</span>
             </div>
-            <span className="per-session-price">₹{per_class_price} per session</span>
-          </div>
-          <div className="card-pricing">
-            <span className='refund'>{refund}</span>
-            <span className="discount">{discount} OFF</span>
-            <span className="total-sessions">{total_sessions} Sessions</span>
+            <div className="card-pricing">
+              <span className='refund'>{refund}</span>
+              <span className="discount">{discount} OFF</span>
+              <span className="total-sessions">{total_sessions} Sessions</span>
+            </div>
           </div>
         </div>
-      </div>
       </header>
     </div>
   );
