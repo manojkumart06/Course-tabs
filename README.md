@@ -4,7 +4,7 @@ Course-tabs is a React application that displays yearly and monthly data based o
 
 ## Live Demo
 
-Check out the live demo [here](#) 
+Check out the live demo [here](https://course-tabs.vercel.app/) 
 
 ## Installation
 
